@@ -1,0 +1,19 @@
+# ESP-IDF build artifacts
+build/
+sdkconfig.old
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+*.swp
+
+# Secrets - NEVER commit these
+*.pem
+*.key
+*.crt
+*.der
+main/certs/
+sdkconfig
