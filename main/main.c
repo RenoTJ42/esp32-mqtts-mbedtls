@@ -16,6 +16,8 @@
 #include "esp_partition.h"
 #include "esp_idf_version.h"
 
+#include "uart_driver.h"
+
 static const char *TAG = "MAIN";
 
 /**
@@ -62,6 +64,11 @@ static void verify_partitions(void)
 
 void app_main(void)
 {
+    uart_driver_init();
+    uart_write_str("\r\n=== Secure IoT ESP32 — UART Driver Online ===\r\n");
+
+    ESP_LOGI(TAG, "Phase 1 Boot...");
+    
     ESP_LOGI(TAG, "========================================");
     ESP_LOGI(TAG, " Secure IoT ESP32 — Phase 1 Boot");
     ESP_LOGI(TAG, " ESP-IDF v%s", esp_get_idf_version());
