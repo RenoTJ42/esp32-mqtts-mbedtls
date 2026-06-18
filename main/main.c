@@ -17,6 +17,7 @@
 #include "esp_idf_version.h"
 
 #include "uart_driver.h"
+#include "gpio_driver.h"
 
 static const char *TAG = "MAIN";
 
@@ -66,6 +67,8 @@ void app_main(void)
 {
     uart_driver_init();
     uart_write_str("\r\n=== Secure IoT ESP32 — UART Driver Online ===\r\n");
+    gpio_driver_init();
+    gpio_led_blink(1000);
 
     ESP_LOGI(TAG, "Phase 1 Boot...");
     
