@@ -1,6 +1,5 @@
 /**
- * @file    gpio_driver.c
- * @brief   Bare-metal GPIO2 driver — status LED, register-level
+ * Bare-metal GPIO2 driver — status LED, register-level
  *
  * GPIO2 = onboard D2 LED on DOIT ESP32 DevKit V1.
  * No IDF driver conflict — we have full ownership of this pin.
