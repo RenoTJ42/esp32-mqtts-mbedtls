@@ -1,6 +1,4 @@
 /**
- * @file    main.c
- * @brief   Secure IoT ESP32 — Application Entry Point
  *
  * Architecture:
  *   - Sensor Task  (Core 0): BME280 poll → FreeRTOS queue
@@ -22,7 +20,7 @@
 static const char *TAG = "MAIN";
 
 /**
- * @brief Verify our custom 'certs' partition exists and is accessible.
+ * Verify our custom 'certs' partition exists and is accessible.
  *        This proves the partition table was flashed correctly.
  */
 static void verify_partitions(void)
