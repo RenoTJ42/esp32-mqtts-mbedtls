@@ -1,6 +1,5 @@
 /**
- * @file    uart_driver.c
- * @brief   UART0 diagnostic output driver
+ * UART0 diagnostic output driver
  *
  * DESIGN DECISION:
  * UART0 is owned by the ESP-IDF console subsystem. Direct register access
